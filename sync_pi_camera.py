@@ -62,7 +62,7 @@ while True:
 		if GPIO.input(21) == GPIO.HIGH:
 			if GPIO.input(20) == GPIO.HIGH:
 				N = N+1
-				if N == 4:
+				if N == 3:
 					detected_stop = 1
 					N = 0
 		else:
@@ -90,7 +90,7 @@ while True:
 			camera.stop_recording()
 			camera.stop_preview()
 			detected_stop = 0
-			
-    print('')  
+		print('')
+			 
 	   
 GPIO.cleanup()
